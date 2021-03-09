@@ -34,7 +34,7 @@ router.get('/:term', (req, res) => { //http://localhost:3001/api/search/:term
     var hitsArray = data.hits.hits;
     console.log("hi", hitsArray);
     hitsArray.forEach(function(eachArticle) {
-      dataList.push([eachArticle._source['name'], eachArticle._source['description'], eachArticle._source['url'], eachArticle._source['keywords']]);
+      dataList.push([eachArticle._source['name'], eachArticle._source['description'], eachArticle._source['keywords'], eachArticle._source['url']]);
     });
     res.json(dataList);
   });

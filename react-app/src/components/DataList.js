@@ -28,6 +28,9 @@ export default function DataList() {
         <TableHead>
           <TableRow>
             <TableCell>Name</TableCell>
+            <TableCell>Description</TableCell>
+            <TableCell>Keywords</TableCell>
+            <TableCell>URL</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -35,47 +38,6 @@ export default function DataList() {
             console.log("HERE!!", data)
             return(
               <DataItem key = {data[0]} item={data}/>
-            );
-          })}
-        </TableBody>
-      </Table>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Description</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {datas.map((data) => {
-            return(
-              <DataItem key = {data[2]} item={data}/>
-            );
-          })}
-        </TableBody>
-      </Table>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>URL</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {datas.map((data) => {
-            return(
-              <DataItem key = {data[3]} item={data}/>
-            );
-          })}
-        </TableBody>
-      </Table><Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Keywords</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {datas.map((data) => {
-            return(
-              <DataItem key = {data[4]} item={data}/>
             );
           })}
         </TableBody>

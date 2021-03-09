@@ -8,8 +8,20 @@ export default function DataItem({item}) {
       <TableRow>  
         <TableCell onClick={(e) => {
           e.preventDefault();
-          window.location.href=item[2];
+          window.location.href=item[3];
         }}>{item[0]}</TableCell>
+        <TableCell onClick={(e) => {
+          e.preventDefault();
+          window.location.href=item[3];
+        }}>{item[1]}</TableCell>
+        <TableCell onClick={(e) => {
+          e.preventDefault();
+          window.location.href=item[3];
+        }}>{item[2]}</TableCell>
+        <TableCell onClick={(e) => {
+          e.preventDefault();
+          window.location.href=item[3];
+        }}>{item[3]}</TableCell>
       </TableRow>
     </>
   );
