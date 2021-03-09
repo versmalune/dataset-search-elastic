@@ -1,0 +1,20 @@
+{
+  "name": "es-server",
+  "version": "1.0.0",
+  "description": "This is node.js server",
+  "main": "server.js",
+  "author": "JW",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "start:client": "cd .. && cd react-app && yarn start",
+    "start:server": "nodemon server.js",
+    "start": "concurrently --kill-others-on-fail \"yarn start:server\" \"yarn start:client\""
+  }
+}
