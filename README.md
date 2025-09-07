@@ -12,8 +12,6 @@ dataset metadata search using Elasticsearch
 
 ## Usage
 
-    git clone https://gitlab.com/billiamchoi4u/dataset-search.git
-    cd dataset-search
     npm install
     cp .env.example .env
     윈도우의 경우 copy .env.example .env
@@ -38,7 +36,3 @@ dataset metadata search using Elasticsearch
       http.cors.enabled: true
       http.cors.allow-origin: "*"
       ```
-
-
-
-2/3 15:30 Added jshintrc file for those who get undefined error on const, require, etc...
